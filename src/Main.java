@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     static void task1() {
@@ -24,7 +25,16 @@ public class Main {
         System.out.println("Task 3");
         String [] words = {"Yesterday", "love", "was", "such", "an", "easy", "game", "to", "play"};
         System.out.println(Arrays.toString(Methods.cornerValuesArray(words)));
+        System.out.println();
+    }
+    static void task4() {
+        System.out.println("Task 4");
 
+        int [] numbers = {6,4,8,9,3};
+        System.out.println(Arrays.toString(Methods.cornerValuesArray(numbers)));
+
+        char [] chars = {'6','D','8','a','F'};
+        System.out.println(Arrays.toString(Methods.cornerValuesArray(chars)));
 
     }
 }
