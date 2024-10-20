@@ -25,19 +25,32 @@ public class Main {
 
     static void task3() {
         System.out.println("Task 3");
-        String[] words = {"Yesterday", "love", "was", "such", "an", "easy", "game", "to", "play"};
+//        String[] words = {"Yesterday", "love", "was", "such", "an", "easy", "game", "to", "play"};
+//        String[] words = {"rock", "n", "roll"};
+//        String [] words = {"Present", "Simple", "Tense"};
+        String[] words = {};
         System.out.println(Arrays.toString(Methods.cornerValuesArray(words)));
         System.out.println();
+
+//        int[] numbers = {6, 4, 8, 9, 3};
+//        int[] numbers = {-6, -4, -8, -9, -3};
+//        int[] numbers = {6, -4, 8, -9, 3};
+        int[] numbers = {};
+
+        System.out.println(Arrays.toString(Methods.cornerValuesArray(numbers)));
+        System.out.println();
+
+//        char[] chars = {'6', 'D', '8', 'a', 'F'};
+//        char[] chars = {'0', 'c', 'H', '&', '!'};
+        char[] chars = {};
+        System.out.println(Arrays.toString(Methods.cornerValuesArray(chars)));
+        System.out.println();
+
     }
 
     static void task4() {
         System.out.println("Task 4");
-
-        int[] numbers = {6, 4, 8, 9, 3};
-        System.out.println(Arrays.toString(Methods.cornerValuesArray(numbers)));
-
-        char[] chars = {'6', 'D', '8', 'a', 'F'};
-        System.out.println(Arrays.toString(Methods.cornerValuesArray(chars)));
-
+        System.out.println(Methods.factorial(7));
+        System.out.println(Methods.factorial(3));
     }
 }
