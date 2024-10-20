@@ -23,12 +23,16 @@ public class Methods {
 
 
     /**
-     * Находит из переменных типа String самый маленький и самый большой элемент
+     * Находит из переменных типа String самый маленький и самый большой элемент и проверяет на пустоту
      *
      * @param text varargs с переменными типа String
      * @return возвращает самый маленький и самый большой элемент.
      */
     static String[] cornerValuesArray(String... text) {
+        if (text.length == 0) {
+            return new String[0];
+        }
+
         String shortText = text[0];
         String longText = text[0];
         for (String element : text) {
@@ -43,12 +47,16 @@ public class Methods {
     }
 
     /**
-     * Находит из переменных типа int самый маленький и самый большой элемент
+     * Находит из переменных типа int самый маленький и самый большой элемент и проверяет на пустоту
      *
      * @param num varargs с переменными типа int
      * @return возвращает самый маленький и самый большой элемент.
      */
     static int[] cornerValuesArray(int... num) {
+        if (num.length == 0) {
+            return new int[0];
+        }
+
         int shortNum = num[0];
         int longNum = num[0];
 
@@ -66,12 +74,16 @@ public class Methods {
 
 
     /**
-     * Находит из переменных типа char самый маленький и самый большой элемент
+     * Находит из переменных типа char самый маленький и самый большой элемент и проверяет на пустоту
      *
      * @param characters varargs с переменными типа char
      * @return возвращает самый маленький и самый большой элемент.
      */
     static char[] cornerValuesArray(char... characters) {
+        if (characters.length == 0) {
+            return new char[0];
+        }
+
         char shortChar = characters[0];
         char longChar = characters[0];
 
@@ -84,5 +96,13 @@ public class Methods {
             }
         }
         return new char[]{shortChar, longChar};
+    }
+
+    static int factorial(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
     }
 }
